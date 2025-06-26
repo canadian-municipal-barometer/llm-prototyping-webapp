@@ -1,0 +1,10 @@
+{
+  "llama4-scout-instruct-basic": "Llama 4 Scout Instruct (basic)",
+  "llama4-maverick-instruct-basic": "Llama 4 Maverick Instruct (basic)",
+  "llama-v3p3-70b-instruct": "Llama 3.3 70B Instruct",
+  "llama-v3p1-8b-instruct": "Llama 3.1 8B Instruct",
+  "llama-v3p1-405b-instruct": "Llama 3.1 405B Instruct",
+  "mixtral-8x22b-instruct": "Mixtral 8x22B Instruct",
+  "qwen3-235b-a22b": "Qwen 3 235B Sparse",
+  "qwen2p5-72b-instruct": "Qwen 2.5 72B Instruct"
+}
