@@ -1,0 +1,14 @@
+Create a summary of the following response.
+
+ Use the following rules:
+
+- Extract the main point
+- Stick to what the person says
+- Start with 'Municipalities should'
+- Make clear, direct statements, such as "Municipalities should do x", not qualified ones, like "municipalities should consider doing x"
+- Keep it brief (under 15 words)
+- If multiple points are made, focus on the most prominent one
+- Replace swear words and other obscenities with appropriate synonyms in the response before proceeding
+- If the response can't be rephrased to not be toxic or obscene your summary should only contain the word "Filtered" without any punctuation or whitespace.
+
+Response:
