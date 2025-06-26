@@ -8,7 +8,7 @@ with open("data/base_prompt.txt", "r", encoding="utf-8") as file:
     base_prompt = file.read()
 
 with open("data/models.json", "r") as file:
-    model_names = json.load(file)
+    models = json.load(file)
 
 
 KEY = os.environ["API_KEY"]
@@ -65,7 +65,7 @@ with ui.div(class_="d-flex justify-content-center mt-4"):
                 )
 
             with ui.nav_panel("Settings"):
-                ui.input_select("model", "Model:", model_names)
+                ui.input_select("model", "Model:", models["name"])
                 ui.input_slider(
                     "model_temp", "Model temperature:", min=0, max=1, value=0.6
                 )
