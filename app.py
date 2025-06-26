@@ -34,7 +34,10 @@ with ui.div(class_="d-flex justify-content-center mt-4"):
                         prompt=base_prompt, user_input=input.user_input()
                     )
                     response = mt.send_request(
-                        prompt=prompt, model="mixtral-8x22b-instruct", api_key=KEY
+                        prompt=prompt,
+                        model=input.model(),
+                        api_key=KEY,
+                        temperature=input.model_temp(),
                     )
                     return response["completion"]
 
@@ -54,4 +57,12 @@ with ui.div(class_="d-flex justify-content-center mt-4"):
                     2. Adjust the prompt's instructions on the *Full prompt* page.
                     3. Use the *Submit* button to send the prompt to the model and diplay its response.
                     """
+                )
+
+            with ui.nav_panel("Settings"):
+                with ui.tooltip(id="model_tooltip", placement="top"):
+                    ui.input_text("model", "Model:", "mixtral-8x22b-instruct")
+                    "Use any model from this list: https://app.fireworks.ai/models?filter=LLM&serverless=true"
+                ui.input_slider(
+                    "model_temp", "Model temperature:", min=0, max=1, value=0.6
                 )
