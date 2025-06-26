@@ -41,7 +41,7 @@ with ui.div(class_="d-flex justify-content-center mt-4"):
             with ui.nav_panel("Full prompt"):
                 ui.input_text_area(
                     "base_prompt",
-                    "User input:",
+                    "Modify instructions:",
                     value=base_prompt,
                     width="100%",
                     height="30em",
